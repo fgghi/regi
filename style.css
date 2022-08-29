@@ -1,0 +1,20 @@
+table {
+    width: auto;
+    border-collapse: collapse;
+}
+tbody{
+    text-align: left;
+}
+th{
+    text-align: center;
+
+}
+table, th, td{
+    border: 1px solid #000
+}
+tbody:nth-child(even){
+    background-color: #fff;
+}
+tbody:nth-child(odd){
+    background-color: #ddd
+}
