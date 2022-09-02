@@ -14,9 +14,9 @@ th{
 table, th, td{
     border: 1px solid #000
 }
-tbody:nth-child(even){
+tr:nth-child(even){
     background-color: #fff;
 }
-tbody:nth-child(odd){
+tr:nth-child(odd){
     background-color: #ddd
 }
