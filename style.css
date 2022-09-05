@@ -21,3 +21,9 @@ tr:nth-child(odd){
     background-color: #ddd;
     
 }
+body { 
+    background-image: url("https://media4.giphy.com/media/xUPGcpa9lTpwu2l03e/giphy.gif?cid=790b7611bf545206f3656d5c7be290d1b08b6a60c0cb7800&rid=giphy.gif&ct=g"); 
+    
+    background-position: center 25%; 
+    background-size: cover; 
+} 
