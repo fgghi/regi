@@ -1,29 +1,149 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: vcr;
+    src: url(assets/vcr.ttf);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    background-color: rgb(221, 153, 255);
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    border: 20px double white; 
+    font-family: vcr;
+    font-weight: normal;
+    text-align: center; 
+    padding-right: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.loguito{
+    height: 250px;
+    margin-right: 10px;
+}
+.chiquito{
+    width: 50%;
+    align-self:flex-start;
+}
 table {
-    width: auto;
+    width: 1500px;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column
+}
+table a{
+    color: black;
 }
 tbody{
     text-align: left;
+    font-family: vcr;
+    font-weight: 10;
+    
 }
 th{
     text-align: center;
+    background-color:rgb(255, 230, 255);
 
 }
-table, th, td{
-    border: 1px solid #000
-}
+
 tr:nth-child(even){
-    background-color: #fff;
+    background-color: white;
 }
 tr:nth-child(odd){
-    background-color: #ddd;
+    background-color:#F1FAD4;
     
 }
 body { 
-    background-image: url("https://media4.giphy.com/media/xUPGcpa9lTpwu2l03e/giphy.gif?cid=790b7611bf545206f3656d5c7be290d1b08b6a60c0cb7800&rid=giphy.gif&ct=g"); 
-    
+    background-image: url(assets/giphy.webp); 
     background-position: center 25%; 
     background-size: cover; 
+    margin: 0%;
 } 
+
+.inicio{
+    background-image: url(assets/vaporwave.gif);
+    cursor: url(assets/among-us-pixel-cursjjor-pack-removebg-preview.png), auto;
+    background-position: center 500%; 
+    background-size:100%
+}
+.banner{
+    margin: 0 auto;
+    color:white;
+    font-size: 50pt;
+    border: 6px double white; 
+    font-family: vcr;
+    font-weight: normal;
+    text-align: center;   
+}
+a{
+    text-decoration: none;
+
+}
+a:visited {
+    color: none;
+  }
+nav a{
+    font-weight: 700;
+    padding-right: 10px;
+    color: white;
+    font-size: 25px;
+}
+a:hover{
+    color:rgb(51, 102, 255);
+    cursor: url(assets/among-us-pixel-cursor-pack-removebg-preview.png), auto;
+}
+.Titulo{
+    font-size: 100px;
+}
+@media (max-width:100px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+.CSS{
+    background-image: url(assets/fondo.gif);
+    background-position: center 120%; 
+    background-size: cover; 
+}
+article {
+	width: 90%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	padding: 2em;
+	background-color: #c0c0c0;
+	border-left: 2px solid #eee;
+	border-top: 2px solid #eee;
+	border-right: 2px solid #444;
+	border-bottom: 2px solid #444;
+	font-size: 1rem;
+    font-family: vcr;
+    font-weight: normal;   
+}
+
+p:nth-child(odd):hover{
+    color: white;
+    background-color: blue;
+}
+p::first-letter{
+    color: #e580ff;
+}
+.centrado{
+     margin:10px auto;
+    display:block;
+}
