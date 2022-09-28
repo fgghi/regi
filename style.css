@@ -158,3 +158,6 @@ p::first-letter{
      margin:10px auto;
     display:block;
 }
+.flex{
+    width: 700px;
+}
