@@ -1,6 +1,9 @@
 html {
     box-sizing: border-box;
 }
+*{
+    cursor: url(assets/among-us-pixel-cursjjor-pack-removebg-preview.png), auto;
+}
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -55,7 +58,11 @@ th{
     background-color:rgb(255, 230, 255);
 
 }
-
+tr:hover{
+    background-color: #e580ff !important;
+    transform: translate3d(0, 0, 0);
+    font-size: 15pt;
+}
 tr:nth-child(even){
     background-color: white;
 }
@@ -72,7 +79,6 @@ body {
 
 .inicio{
     background-image: url(assets/vaporwave.gif);
-    cursor: url(assets/among-us-pixel-cursjjor-pack-removebg-preview.png), auto;
     background-position: center 500%; 
     background-size:100%
 }
