@@ -139,6 +139,12 @@ article {
 p:nth-child(odd):hover{
     color: white;
     background-color: blue;
+    text-decoration: underline;
+}
+p:nth-child(even):hover{
+    color: white;
+    background-color: purple;
+    text-decoration: wavy;
 }
 p::first-letter{
     color: #e580ff;
