@@ -1,25 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Inicio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.google.com/specimen/IM+Fell+DW+Pica:wght@400;700&display=swap" rel="stylesheet">
+  <title>Feliz mesiversario</title>
+  <link rel="stylesheet" href="styles.css">
+  <header>
+    <div class="logo">
+        <img src="assets/giphy.webp" alt="loguito" class="loguito">
+        <h2 class="Titulo"> Bienvenida Amorcito</h2>
+        <img src="assets/giphy2.webp" alt="loguito" class="loguito">
+    </div>
+    <nav>
+        <a href="#" class="nav-link">Inicio</a>
+    </nav>
+</header>
 </head>
-<body class="inicio">
-    <header>
-        <div class="logo">
-            <img src="assets/iniciosl.gif" alt="loguito" class="loguito">
-            <h2 class="Titulo"> Tech Web 2022</h2>
-        </div>
-        <nav>
-            <a href="#" class="nav-link">Inicio</a>
-            <a href="manualHTML.html" class="nav-link">Manual_HTML</a>    
-            <a href="manualCSS.html" class="nav-link">Manual_CSS</a>
-            <a href="practicaCSS.html" class="nav-link">Practica_CSS</a>
-        </nav>
-    </header>
-     <img src="assets/welcome.gif" alt="loguito" class="centrado" >
+
+<body class="body">
+
+  <div id="imageContainer">
+    <!-- Imágenes con diferentes animaciones -->
+    <img src="assets/1.jpg" alt="Imagen 1" class="animated-image fadeIn">
+    <img src="assets/2.jpg" alt="Imagen 2" class="animated-image slideInLeft">
+    <img src="assets/image3.jpg" alt="Imagen 3" class="animated-image bounceIn">
+    <!-- Agrega más imágenes con diferentes clases de animación si lo deseas -->
+  </div>
+
+  <audio autoplay loop>
+    <source src="assets/videoplayback.m4a" type="audio/mp3">
+    Tu navegador no soporta la reproducción de audio.
+  </audio>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const images = document.querySelectorAll('.animated-image');
+      let delay = 0;
+
+      images.forEach(function (image) {
+        setTimeout(function () {
+          image.style.display = 'block'; // Mostrar la imagen
+        }, delay);
+        delay += 1500; // Incrementar el retardo para la siguiente imagen
+      });
+
+      // Preguntar al final de las imágenes
+      setTimeout(function () {
+        const confirm = window.confirm('Regina Victoria Parra, ¿quieres ser mi novia?');
+        if (confirm) {
+          alert('💞 ¡Felicidades! 💞');
+        } else {
+          alert('😔 ¡Qué pena! 😔');
+        }
+      }, delay);
+    });
+  </script>
 </body>
+
 </html>

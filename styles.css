@@ -1,21 +1,65 @@
-html {
+/* Estilos para el fondo y las imágenes */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2e6ff; /* Color de fondo en tono púrpura pastel */
+    color: #333; /* Color de texto */
+  }
+  
+  #imageContainer {
+    text-align: center;
+    margin-top: 50vh; /* Mover el contenedor hacia abajo */
+  }
+  
+  .animated-image {
+    display: none; /* Ocultar todas las imágenes por defecto */
+    max-width: 100%;
+    animation-duration: 1.5s;
+  }
+  
+  /* Ejemplos de animaciones, puedes cambiar o agregar más */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  html {
     box-sizing: border-box;
-}
-*{
-    cursor: url(assets/among-us-pixel-cursjjor-pack-removebg-preview.png), auto;
 }
 *, *::before, *::after {
     box-sizing: inherit;
 }
 @font-face {
     font-family: vcr;
-    src: url(assets/vcr.ttf);
+    src: url(assets/folklore.ttf);
 }
 header{
     display: flex;
     flex-direction: column;
     min-height: 200px;
-    background-color: rgb(221, 153, 255);
+    background-color: rgb(241,203,255);
     justify-content: space-between;
     align-items: center;
     color:white;
@@ -30,8 +74,9 @@ header{
     align-items: center;
 }
 .loguito{
-    height: 250px;
+    height: 100px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 .chiquito{
     width: 50%;
@@ -58,10 +103,7 @@ th{
     background-color:rgb(255, 230, 255);
 
 }
-tr:hover{
-    background-color: #e580ff !important;
-    color: white !important;
-}
+
 tr:nth-child(even){
     background-color: white;
 }
@@ -70,7 +112,7 @@ tr:nth-child(odd){
     
 }
 body { 
-    background-image: url(assets/giphy.webp); 
+
     background-position: center 25%; 
     background-size: cover; 
     margin: 0%;
@@ -103,10 +145,7 @@ nav a{
     color: white;
     font-size: 25px;
 }
-a:hover{
-    color:rgb(51, 102, 255);
-    cursor: url(assets/among-us-pixel-cursor-pack-removebg-preview.png), auto;
-}
+
 .Titulo{
     font-size: 100px;
 }
