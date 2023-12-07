@@ -277,8 +277,8 @@ p::first-letter{
     background-color: #ffb3ff;
   }
   .scale-up-left:hover {
-    transform: scale(1.2); /* Escala la imagen al 120% en el evento hover */
+    transform: scale(1.2);
   }
   .scale-up-right:hover {
-    transform: scale(1.2); /* Escala la imagen al 120% en el evento hover */
+    transform: scale(1.2);
   }
